@@ -1,0 +1,12 @@
+Source: oscar-naemon-plugins
+Section: oscar
+Priority: optional
+Maintainer: Olivier Lahaye <olivier.lahaye@cea.fr>
+Build-Depends: debhelper (>= 4.0.0)
+Standards-Version: 3.7.2
+
+Package: oscar-naemon-plugins
+Architecture: all
+Depends: ${misc:Depends}, nagios-common
+Description: Collection of naemon plugins to enhance OSCAR Monitoring.
+ Collection of naemon plugins to enhance OSCAR Monitoring.
