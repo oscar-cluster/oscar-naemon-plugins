@@ -1,10 +1,10 @@
-Name:    naemon-oscar-plugins
+Name:    oscar-naemon-plugins
 Summary: Collection of naemon plugins to enhance OSCAR Monitoring
 Version: 1.1
 Release: 1%{?dist}
 Packager: Olivier LAHAYE <olivier.lahaye@cea.fr>
 License: GPL
-URL: http://exchange.nagios.org
+URL: https://github.com/oscar-cluster/oscar-naemon-plugins
 Group: Applications/System
 BuildArch: noarch
 Source: %{name}-%{version}.tar.bz2
@@ -25,7 +25,7 @@ Collection of naemon plugins to enhance OSCAR Monitoring.
 
 %files
 %doc AUTHORS README
-%{_libdir}/nagios/plugins/*
+%{naemon_plugin_dir}/*
 
 %changelog
 * Wed Jul  6 2022 Olivier Lahaye <olivier.lahaye@cea.fr> 1.1-1
