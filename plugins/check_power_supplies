@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# Return codes:
+# - 0: OK
+# - 1: WARNING
+# - 2: CRITICAL
+# - 3: UNKNOWN
+
+
+POWER_STATUS=$(LC_ALL=C /usr/bin/ipmitool sdr type "Power Supply")
+
+#echo "$POWER_STATUS"
+
+POWER_REDUNDANCY=$(echo $POWER_STATUS| grep "PS Redundancy")
+
+case "$POWER_REDUNDANCY" in
+	*Fully' 'Redundant* )
+		echo "Power Supply: Fully redundant"
+		exit 0;;
+	*TODO* )
+		echo "Power Supply: PS1 down"
+		exit 1;;
+	*TODO* )
+		echo "Power Supply: PS2 down"
+		exit 1;;
+	*TODO* )
+		echo "Power Supply: Error getting status"
+		exit 2;;
+	* )
+		echo "Power Supply: Unknown problem"
+		exit 3;;
+esac

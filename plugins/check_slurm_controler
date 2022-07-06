@@ -1,0 +1,24 @@
+#!/bin/bash
+
+# Return codes:
+# - 0: OK
+# - 1: WARNING
+# - 2: CRITICAL
+# - 3: UNKNOWN
+
+SLURM_STATUS=$(LC_ALL=C /usr/bin/scontrol ping)
+
+echo $SLURM_STATUS
+
+case "$SLURM_STATUS" in
+	*UP/UP* )
+		exit 0;;
+	*UP/DOWN* )
+		exit 1;;
+	*DOWN/UP )
+		exit 1;;
+	*DOWN/DOWN* )
+		exit 2;;
+	* )
+		exit 3;;
+esac
