@@ -1,7 +1,7 @@
 NAME = oscar-naemon-plugins
 VERSION = 1.1
-LIB_DIR = /usr/lib64
-NAGIOS_PLUGINS_DIR = $(LIB_DIR)/nagios/plugins/
+LIBDIR := /usr/lib64
+NAGIOS_PLUGINS_DIR = $(LIBDIR)/nagios/plugins/
 
 install:
 	install -d -m 0755 $(DESTDIR)/$(NAGIOS_PLUGINS_DIR)/
