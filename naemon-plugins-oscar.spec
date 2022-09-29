@@ -1,6 +1,6 @@
 Name:    naemon-plugins-oscar
 Summary: Collection of naemon plugins to enhance OSCAR Monitoring
-Version: 1.1
+Version: 1.2
 Release: 1%{?dist}
 Packager: Olivier LAHAYE <olivier.lahaye@cea.fr>
 License: GPL
