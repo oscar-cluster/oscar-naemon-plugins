@@ -2,6 +2,7 @@ NAME = naemon-plugins-oscar
 VERSION = 1.2
 LIBDIR := /usr/lib64
 NAGIOS_PLUGINS_DIR = $(LIBDIR)/nagios/plugins/
+FILES = plugins/check_pbsnode plugins/check_power_supplies plugins/check_slurm_controler
 
 install:
 	install -d -m 0755 $(DESTDIR)/$(NAGIOS_PLUGINS_DIR)/
