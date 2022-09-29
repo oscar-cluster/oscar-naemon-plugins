@@ -1,6 +1,6 @@
-naemon-oscar-plugins is part of the OSCAR project.
+naemon-plugins-oscar is part of the OSCAR project.
 
-Here are the respective authors of plugins packaged in naemon-oscar-plugins.
+Here are the respective authors of plugins packaged in naemon-plugins-oscar.
 
 check_pbsnode:        Olivier Lahaye <olivier.lahaye@cea.fr>
 check_power_supplies  Olivier Lahaye <olivier.lahaye@cea.fr>

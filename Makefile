@@ -1,4 +1,4 @@
-NAME = oscar-naemon-plugins
+NAME = naemon-plugins-oscar
 VERSION = 1.1
 LIBDIR := /usr/lib64
 NAGIOS_PLUGINS_DIR = $(LIBDIR)/nagios/plugins/

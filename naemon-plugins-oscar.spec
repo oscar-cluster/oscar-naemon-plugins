@@ -1,4 +1,4 @@
-Name:    oscar-naemon-plugins
+Name:    naemon-plugins-oscar
 Summary: Collection of naemon plugins to enhance OSCAR Monitoring
 Version: 1.1
 Release: 1%{?dist}
@@ -28,6 +28,10 @@ Collection of naemon plugins to enhance OSCAR Monitoring.
 %{naemon_plugin_dir}/*
 
 %changelog
+* Thu Sep 29 2022  Olivier Lahaye <olivier.lahaye@cea.fr> 1.2-1
+- Renamed to naemon-plugins-oscar to reflect nagios
+  packaging naming convention.
+
 * Wed Jul  6 2022 Olivier Lahaye <olivier.lahaye@cea.fr> 1.1-1
 - Added check_slurm_controler and check_power_supplies
 

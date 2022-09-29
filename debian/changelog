@@ -1,4 +1,10 @@
-oscar-naemon-plugins (1.1-1) hardy; urgency=low
+naemon-plugins-oscar (1.2-1) hardy; urgency=low
+
+  * New package name to match nagios plugins packages
+
+ -- Olivier Lahaye <olivier.lahaye@cea.fr>  Thu, 29 Sep 2022 10:20:54 +0200
+
+naemon-plugins-oscar (1.1-1) hardy; urgency=low
 
   * Initial packaging
 
