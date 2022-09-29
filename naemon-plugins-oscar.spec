@@ -24,7 +24,7 @@ Collection of naemon plugins to enhance OSCAR Monitoring.
 #{__cp} plugins/* %{buildroot}%{_libdir}/nagios/plugins/
 
 %files
-%doc AUTHORS README
+%doc AUTHORS README.md
 %{naemon_plugin_dir}/*
 
 %changelog
