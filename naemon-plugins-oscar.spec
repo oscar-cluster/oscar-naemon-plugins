@@ -10,7 +10,7 @@ BuildArch: noarch
 Source: %{name}-%{version}.tar.bz2
 Requires: nagios-common
 
-%define naemon_plugin_dir %{_libdir}/nagios/plugins
+%define naemon_plugin_dir %{_prefix}/lib64/nagios/plugins
 
 %description
 Collection of naemon plugins to enhance OSCAR Monitoring.
